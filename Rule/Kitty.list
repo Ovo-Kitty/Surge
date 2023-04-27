@@ -7,7 +7,7 @@ DOMAIN-SUFFIX,emby.misakaf.org,DIRECT
 DOMAIN,lens.l.google.com,美国节点
 
 # > ChatGPT
-host-keyword,openai,美国节点
+DOMAIN-KEYWORD,openai,美国节点
 DOMAIN-SUFFIX,identrust.com,美国节点
 DOMAIN-SUFFIX,auth0.com,美国节点
 
