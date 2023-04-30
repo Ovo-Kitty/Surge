@@ -3,7 +3,7 @@
 
 [MITM]
 
-hostname = %APPEND% api.ulife.group
+hostname = %APPEND% api.ulife.group,api.psy-1.com,ad.snailsleep.net,api.58moto.com
 
 [URL Rewrite]
 
@@ -14,6 +14,18 @@ hostname = %APPEND% api.ulife.group
 ^https:\/\/api\.ulife\.group\/auth\/account\/getUpgradeStrategy - reject
 ^https:\/\/api\.ulife\.group\/signintask\/adServing - reject
 ^https:\/\/api\.ulife\.group\/market\/frontEntrance\/getThirdAdvertising\?displayPort=1&type=20 - reject
+
+# > 小睡眠
+^https:\/\/api\.psy-1\.com\/cosleep\/newborn\/ad\/sleep? - reject
+^https:\/\/api\.psy-1\.com\/cosleep\/my\/ad? - reject
+
+# > 蜗牛睡眠
+^https:\/\/ad\.snailsleep\.net\/snail-ad\/window\/policy\/get? - reject
+^https:\/\/ad\.snailsleep\.net\/snail-ad\/advertisement\/get? - reject
+
+# > 摩托范
+^https:\/\/api\.58moto\.com\/advert\/public\/advert\/findDetail? - reject
+^https:\/\/api\.58moto\.com\/mall\/goods\/self\/list? - reject
 
 [Script]
 
