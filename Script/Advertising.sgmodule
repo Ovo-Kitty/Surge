@@ -3,7 +3,7 @@
 
 [MITM]
 
-hostname = %APPEND% api.ulife.group,api.psy-1.com,ad.snailsleep.net,api.58moto.com,edith.xiaohongshu.com,www.xiaohongshu.co,quanguo.mygolbs.com
+hostname = %APPEND% api.ulife.group,api.psy-1.com,ad.snailsleep.net,api.58moto.com,edith.xiaohongshu.com,www.xiaohongshu.com,quanguo.mygolbs.com
 
 [URL Rewrite]
 
