@@ -3,7 +3,7 @@
 
 [MITM]
 
-hostname = %APPEND% api.ulife.group,api.psy-1.com,ad.snailsleep.net,api.58moto.com,edith.xiaohongshu.com,www.xiaohongshu.com
+hostname = %APPEND% api.ulife.group,api.psy-1.com,ad.snailsleep.net,api.58moto.com,edith.xiaohongshu.com,www.xiaohongshu.co,quanguo.mygolbs.com
 
 [URL Rewrite]
 
@@ -31,6 +31,10 @@ hostname = %APPEND% api.ulife.group,api.psy-1.com,ad.snailsleep.net,api.58moto.c
 ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/surprisebox\/(get_style\?|open\?|submit_action$) - reject
 ^https:\/\/www\.xiaohongshu\.com\/api\/marketing\/box\/trigger\? - reject
 ^https:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/ads\/resource\? - reject
+
+
+# > 掌上公交
+^https?:\/\/quanguo\.mygolbs\.com:8081\/MyBusServer\/servlet\/MyGoServer\.HttpPool\.HttpHandlerServlet - reject
 
 [Script]
 悠洗去首页图标 = type=http-response, pattern=^https:\/\/api\.ulife\.group\/market\/homeIconDetail\/list\/v7, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Ovo-Kitty/JOSN/main/YouXi.js, timeout=60, script-update-interval=0
