@@ -3,7 +3,7 @@
 
 [MITM]
 
-hostname = %APPEND% api.ulife.group,api.psy-1.com,ad.snailsleep.net,api.58moto.com,edith.xiaohongshu.com,www.xiaohongshu.com,quanguo.mygolbs.com,information.17wanxiao.com, information.59wanmei.com
+hostname = %APPEND% api.ulife.group,api.psy-1.com,ad.snailsleep.net,api.58moto.com,edith.xiaohongshu.com,www.xiaohongshu.com,quanguo.mygolbs.com,information.59wanmei.com
 
 [URL Rewrite]
 
@@ -37,7 +37,6 @@ hostname = %APPEND% api.ulife.group,api.psy-1.com,ad.snailsleep.net,api.58moto.c
 ^https?:\/\/quanguo\.mygolbs\.com:8081\/MyBusServer\/servlet\/MyGoServer\.HttpPool\.HttpHandlerServlet - reject
 
 # > 完美校园
-^https:\/\/information\.17wanxiao\.com\/cms\/api\/info\/detail - reject
 ^https:\/\/information\.59wanmei\.com\/cms\/api\/info\/home - reject
 
 [Script]
